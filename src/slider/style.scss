@@ -1,0 +1,28 @@
+
+.slider {
+    display: flex;
+    height: 70%;
+    align-items: center;
+    .prev {
+        margin-right: auto;
+    }
+    .next {
+        margin-left: auto;
+    }
+}
+
+.progress {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .dot {
+        cursor: pointer;
+        transform: scale(0.75);
+        &.inactive {
+            opacity: 0.25;
+        }
+    }
+
+}
